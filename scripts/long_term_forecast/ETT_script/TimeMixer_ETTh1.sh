@@ -2,15 +2,15 @@ export CUDA_VISIBLE_DEVICES=0
 
 model_name=TimeMixer
 
-seq_len=96
+seq_len=512
 e_layers=2
 down_sampling_layers=3
 down_sampling_window=2
 learning_rate=0.01
 d_model=16
 d_ff=32
-train_epochs=10
-patience=10
+train_epochs=100
+patience=3
 batch_size=16
 
 python -u run.py \
@@ -90,7 +90,7 @@ python -u run.py \
   --d_ff $d_ff \
   --learning_rate $learning_rate \
   --train_epochs $train_epochs \
-  --patience $patience \
+  --patience 10 \
   --batch_size 128 \
   --down_sampling_layers $down_sampling_layers \
   --down_sampling_method avg \
@@ -118,7 +118,7 @@ python -u run.py \
   --d_ff $d_ff \
   --learning_rate $learning_rate \
   --train_epochs $train_epochs \
-  --patience $patience \
+  --patience 10 \
   --batch_size 128 \
   --down_sampling_layers $down_sampling_layers \
   --down_sampling_method avg \

@@ -1,4 +1,4 @@
-export CUDA_VISIBLE_DEVICES=7
+export CUDA_VISIBLE_DEVICES=0
 
 model_name=Autoformer
 
@@ -11,7 +11,7 @@ python -u run.py \
   --model $model_name \
   --data custom \
   --features M \
-  --seq_len 96 \
+  --seq_len 512 \
   --label_len 48 \
   --pred_len 96 \
   --e_layers 2 \
@@ -32,7 +32,7 @@ python -u run.py \
   --model $model_name \
   --data custom \
   --features M \
-  --seq_len 96 \
+  --seq_len 512 \
   --label_len 48 \
   --pred_len 192 \
   --e_layers 2 \
@@ -54,7 +54,7 @@ python -u run.py \
   --model $model_name \
   --data custom \
   --features M \
-  --seq_len 96 \
+  --seq_len 512 \
   --label_len 48 \
   --pred_len 336 \
   --e_layers 2 \
@@ -76,7 +76,7 @@ python -u run.py \
   --model $model_name \
   --data custom \
   --features M \
-  --seq_len 96 \
+  --seq_len 512 \
   --label_len 48 \
   --pred_len 720 \
   --e_layers 2 \

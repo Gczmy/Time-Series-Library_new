@@ -1,4 +1,4 @@
-export CUDA_VISIBLE_DEVICES=2
+export CUDA_VISIBLE_DEVICES=0
 
 model_name=TimesNet
 
@@ -11,7 +11,7 @@ python -u run.py \
   --model $model_name \
   --data ETTh1 \
   --features M \
-  --seq_len 96 \
+  --seq_len 512 \
   --label_len 48 \
   --pred_len 96 \
   --e_layers 2 \
