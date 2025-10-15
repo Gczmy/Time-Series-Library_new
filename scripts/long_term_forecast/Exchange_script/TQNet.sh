@@ -2,7 +2,7 @@ model_name=TQNet
 
 root_path_name=./dataset/exchange_rate/
 data_path_name=exchange_rate.csv
-model_id_name=Exchange_36_24
+model_id_name=Exchange
 data_name=custom
 
 seq_len=512

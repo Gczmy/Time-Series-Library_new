@@ -2,7 +2,7 @@ model_name=CycleNet
 
 root_path_name=./dataset/illness/
 data_path_name=national_illness.csv
-model_id_name=ili_36_24
+model_id_name=ili
 data_name=custom
 
 
