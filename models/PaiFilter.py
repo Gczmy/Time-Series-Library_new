@@ -1,6 +1,6 @@
 import torch
 import torch.nn as nn
-from layers.RevIN import RevIN
+from layers.StandardNorm import Normalize
 
 
 class Model(nn.Module):
@@ -10,7 +10,7 @@ class Model(nn.Module):
         self.seq_len = configs.seq_len
         self.pred_len = configs.pred_len
         self.scale = 0.02
-        self.revin_layer = RevIN(configs.enc_in, affine=True, subtract_last=False)
+        self.revin_layer = Normalize(configs.enc_in, affine=True, subtract_last=False)
 
         self.embed_size = self.seq_len
         self.hidden_size = configs.hidden_size

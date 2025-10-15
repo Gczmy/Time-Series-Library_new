@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from layers.RevIN import RevIN
+from layers.StandardNorm import Normalize
 
 
 class Model(nn.Module):
@@ -17,7 +17,7 @@ class Model(nn.Module):
         self.scale = 0.02
         self.sparsity_threshold = 0.01
 
-        self.revin_layer = RevIN(configs.enc_in, affine=True, subtract_last=False)
+        self.revin_layer = Normalize(configs.enc_in, affine=True, subtract_last=False)
         self.embedding = nn.Linear(self.seq_len, self.embed_size)
         self.token = nn.Conv1d(in_channels=self.seq_len, out_channels=self.embed_size, kernel_size=(1,))
 
