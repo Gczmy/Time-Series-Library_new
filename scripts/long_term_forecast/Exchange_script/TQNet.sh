@@ -1,3 +1,4 @@
+export CUDA_VISIBLE_DEVICES=0
 model_name=TQNet
 
 root_path_name=./dataset/exchange_rate/
@@ -19,7 +20,7 @@ do
     --features M \
     --seq_len $seq_len \
     --pred_len $pred_len \
-    --enc_in 7 \
+    --enc_in 8 \
     --cycle 24 \
     --patience 5 \
     --dropout 0.5 \

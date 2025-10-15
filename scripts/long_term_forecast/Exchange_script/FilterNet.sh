@@ -11,7 +11,7 @@ python -u run.py \
   --model $model_name \
   --data custom \
   --features M \
-  --enc_in 7 \
+  --enc_in 8 \
   --seq_len 512 \
   --pred_len 96 \
   --hidden_size 256 \
@@ -32,7 +32,7 @@ python -u run.py \
   --model $model_name \
   --data custom \
   --features M \
-  --enc_in 7 \
+  --enc_in 8 \
   --seq_len 512 \
   --pred_len 192 \
   --hidden_size 128 \
@@ -52,7 +52,7 @@ python -u run.py \
   --model $model_name \
   --data custom \
   --features M \
-  --enc_in 7 \
+  --enc_in 8 \
   --seq_len 512 \
   --pred_len 336 \
   --hidden_size 128 \
@@ -73,7 +73,7 @@ python -u run.py \
   --model $model_name \
   --data custom \
   --features M \
-  --enc_in 7 \
+  --enc_in 8 \
   --seq_len 512 \
   --pred_len 720 \
   --hidden_size 256 \

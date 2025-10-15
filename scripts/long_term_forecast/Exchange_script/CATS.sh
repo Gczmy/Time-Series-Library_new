@@ -14,7 +14,7 @@ python -u run.py \
   --seq_len 512 \
   --pred_len 96 \
   --d_layers 3 \
-  --dec_in 7 \
+  --dec_in 8 \
   --des 'Exp' \
   --itr 1 \
   --d_model 256 \
@@ -35,7 +35,7 @@ python -u run.py \
   --seq_len 512 \
   --pred_len 192 \
   --d_layers 3 \
-  --dec_in 7 \
+  --dec_in 8 \
   --des 'Exp' \
   --itr 1 \
   --d_model 256 \
@@ -57,7 +57,7 @@ python -u run.py \
   --seq_len 512 \
   --pred_len 336 \
   --d_layers 3 \
-  --dec_in 7 \
+  --dec_in 8 \
   --des 'Exp' \
   --itr 1 \
   --d_model 256 \
@@ -80,7 +80,7 @@ python -u run.py \
   --seq_len 512 \
   --pred_len 720 \
   --d_layers 3 \
-  --dec_in 7 \
+  --dec_in 8 \
   --des 'Exp' \
   --itr 1 \
   --d_model 256 \
