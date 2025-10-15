@@ -140,6 +140,27 @@ if __name__ == '__main__':
     # TimeXer
     parser.add_argument('--patch_len', type=int, default=16, help='patch length')
 
+    # TQNet & CycleNet
+    parser.add_argument('--cycle', type=int, default=24, help='cycle length')
+    parser.add_argument('--model_type', type=str, default='mlp', help='model type, options: [linear, mlp]')
+    parser.add_argument('--use_revin', type=int, default=1, help='1: use revin or 0: no revin')
+
+    # CATS
+    parser.add_argument('--QAM_start', type=float, default=0.1, help='masking start probability')
+    parser.add_argument('--QAM_end', type=float, default=0.3, help='masking end probability')
+    parser.add_argument('--stride', type=int, default=24, help='stride')
+    parser.add_argument('--pct_start', type=float, default=0.3, help='pct_start')
+    parser.add_argument('--padding_patch', default='end', help='None: None; end: padding on the end')
+    parser.add_argument('--query_independence', action='store_true', default=False, help='sharing query across dimension')
+    parser.add_argument('--store_attn', action='store_true', default=False, help='store attention score')
+
+    # FilterNet
+    parser.add_argument('--embed_size', default=128, type=int)
+    parser.add_argument('--hidden_size', default=256, type=int)
+
+    # SOFTS
+    parser.add_argument('--d_core', type=int, default=512, help='dimension of core')
+
     args = parser.parse_args()
     if torch.cuda.is_available() and args.use_gpu:
         args.device = torch.device('cuda:{}'.format(args.gpu))

@@ -1,6 +1,4 @@
-export CUDA_VISIBLE_DEVICES=0
-
-model_name=Pyraformer
+model_name=SOFTS
 
 python -u run.py \
   --task_name long_term_forecast \
@@ -12,14 +10,15 @@ python -u run.py \
   --data custom \
   --features M \
   --seq_len 512 \
-  --label_len 48 \
   --pred_len 96 \
-  --e_layers 2 \
-  --d_layers 1 \
-  --factor 3 \
-  --enc_in 8 \
-  --dec_in 8 \
-  --c_out 8 \
+  --e_layers 1 \
+  --enc_in 7 \
+  --dec_in 7 \
+  --c_out 7 \
+  --d_model 256 \
+  --d_core 256 \
+  --d_ff 256 \
+  --learning_rate 0.0003 \
   --des 'Exp' \
   --itr 1
 
@@ -33,17 +32,17 @@ python -u run.py \
   --data custom \
   --features M \
   --seq_len 512 \
-  --label_len 48 \
   --pred_len 192 \
-  --e_layers 2 \
-  --d_layers 1 \
-  --factor 3 \
-  --enc_in 8 \
-  --dec_in 8 \
-  --c_out 8 \
+  --e_layers 1 \
+  --enc_in 7 \
+  --dec_in 7 \
+  --c_out 7 \
+  --d_model 256 \
+  --d_core 256 \
+  --d_ff 256 \
+  --learning_rate 0.0003 \
   --des 'Exp' \
-  --itr 1 \
-  --train_epochs 1
+  --itr 1
 
 python -u run.py \
   --task_name long_term_forecast \
@@ -55,17 +54,17 @@ python -u run.py \
   --data custom \
   --features M \
   --seq_len 512 \
-  --label_len 48 \
   --pred_len 336 \
-  --e_layers 2 \
-  --d_layers 1 \
-  --factor 3 \
-  --enc_in 8 \
-  --dec_in 8 \
-  --c_out 8 \
+  --e_layers 1 \
+  --enc_in 7 \
+  --dec_in 7 \
+  --c_out 7 \
+  --d_model 256 \
+  --d_core 256 \
+  --d_ff 512 \
+  --learning_rate 0.0003 \
   --des 'Exp' \
-  --itr 1 \
-  --train_epochs 1
+  --itr 1
 
 python -u run.py \
   --task_name long_term_forecast \
@@ -77,13 +76,14 @@ python -u run.py \
   --data custom \
   --features M \
   --seq_len 512 \
-  --label_len 48 \
   --pred_len 720 \
-  --e_layers 2 \
-  --d_layers 1 \
-  --factor 3 \
-  --enc_in 8 \
-  --dec_in 8 \
-  --c_out 8 \
+  --e_layers 1 \
+  --enc_in 7 \
+  --dec_in 7 \
+  --c_out 7 \
+  --d_model 256 \
+  --d_core 256 \
+  --d_ff 512 \
+  --learning_rate 0.0003 \
   --des 'Exp' \
   --itr 1
