@@ -26,6 +26,9 @@ for i in "${!pred_lens[@]}"; do
 		--label_len 0 \
 		--d_model ${d_models[$i]} \
 		--patch_len ${patch_lens[$i]} \
+		--enc_in 8 \
+    --dec_in 8 \
+    --c_out 8 \
 		--batch_size 256 \
 		--learning_rate 0.0002 \
 		--lradj type3
