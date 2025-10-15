@@ -293,7 +293,7 @@ class Model(nn.Module):
                                     store_attn=store_attn, padding_patch=padding_patch, QAM_start=QAM_start,
                                     QAM_end=QAM_end, **kwargs)
 
-    def forward(self, x):  # x: [Batch, Input length, Channel]
+    def forward(self, x, x_mark_enc, x_dec, x_mark_dec, mask=None):  # x: [Batch, Input length, Channel]
         x = x.permute(0, 2, 1)  # x: [Batch, Channel, Input length]
         x = self.model(x)
         x = x.permute(0, 2, 1)  # x: [Batch, Input length, Channel]
