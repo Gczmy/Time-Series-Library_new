@@ -1,65 +1,65 @@
-export CUDA_VISIBLE_DEVICES=0
+export CUDA_VISIBLE_DEVICES=1
 
 model_name=TimeXer
 
 python -u run.py \
   --task_name long_term_forecast \
   --is_training 1 \
-  --root_path ./dataset/ETT-small/ \
-  --data_path ETTh2.csv \
-  --model_id ETTh2_512_96 \
+  --root_path ./dataset/illness/ \
+  --data_path national_illness.csv \
+  --model_id ili_36_24 \
   --model $model_name \
-  --data ETTh2 \
+  --data custom \
   --features M \
-  --seq_len 512 \
-  --label_len 48 \
-  --pred_len 96 \
+  --seq_len 36 \
+  --label_len 18 \
+  --pred_len 24 \
   --e_layers 1 \
   --factor 3 \
   --enc_in 7 \
   --dec_in 7 \
   --c_out 7 \
-  --des 'Exp' \
   --d_model 256 \
-  --d_ff 1024 \
-  --batch_size 16 \
+  --batch_size 4 \
+  --des 'exp' \
   --itr 1
+
 
 python -u run.py \
   --task_name long_term_forecast \
   --is_training 1 \
-  --root_path ./dataset/ETT-small/ \
-  --data_path ETTh2.csv \
-  --model_id ETTh2_512_192 \
+  --root_path ./dataset/illness/ \
+  --data_path national_illness.csv \
+  --model_id ili_36_36 \
   --model $model_name \
-  --data ETTh2 \
+  --data custom \
   --features M \
-  --seq_len 512 \
-  --label_len 48 \
-  --pred_len 192 \
-  --e_layers 1 \
-  --factor 3 \
-  --enc_in 7 \
-  --dec_in 7 \
-  --c_out 7 \
-  --des 'Exp' \
-  --d_model 256 \
-  --d_ff 1024 \
-  --itr 1
-
-python -u run.py \
-  --task_name long_term_forecast \
-  --is_training 1 \
-  --root_path ./dataset/ETT-small/ \
-  --data_path ETTh2.csv \
-  --model_id ETTh2_512_336 \
-  --model $model_name \
-  --data ETTh2 \
-  --features M \
-  --seq_len 512 \
-  --label_len 48 \
-  --pred_len 336 \
+  --seq_len 36 \
+  --label_len 18 \
+  --pred_len 36 \
   --e_layers 2 \
+  --factor 3 \
+  --enc_in 7 \
+  --dec_in 7 \
+  --c_out 7 \
+  --des 'Exp' \
+  --d_model 128 \
+  --batch_size 4 \
+  --itr 1
+
+python -u run.py \
+  --task_name long_term_forecast \
+  --is_training 1 \
+  --root_path ./dataset/illness/ \
+  --data_path national_illness.csv \
+  --model_id ili_36_48 \
+  --model $model_name \
+  --data custom \
+  --features M \
+  --seq_len 36 \
+  --label_len 18 \
+  --pred_len 48 \
+  --e_layers 1 \
   --factor 3 \
   --enc_in 7 \
   --dec_in 7 \
@@ -67,22 +67,22 @@ python -u run.py \
   --des 'Exp' \
   --d_model 512 \
   --d_ff 1024 \
-  --batch_size 4 \
+  --batch_size 16 \
   --itr 1
 
 python -u run.py \
   --task_name long_term_forecast \
   --is_training 1 \
-  --root_path ./dataset/ETT-small/ \
-  --data_path ETTh2.csv \
-  --model_id ETTh2_512_720 \
+  --root_path ./dataset/illness/ \
+  --data_path national_illness.csv \
+  --model_id ili_36_60 \
   --model $model_name \
-  --data ETTh2 \
+  --data custom \
   --features M \
-  --seq_len 512 \
-  --label_len 48 \
-  --pred_len 720 \
-  --e_layers 2 \
+  --seq_len 36 \
+  --label_len 18 \
+  --pred_len 60 \
+  --e_layers 1 \
   --factor 3 \
   --enc_in 7 \
   --dec_in 7 \
