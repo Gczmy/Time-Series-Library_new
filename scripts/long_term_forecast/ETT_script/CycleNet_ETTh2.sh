@@ -12,6 +12,7 @@ seq_len=512
 for pred_len in 96 192 336 720
 do
     python -u run.py \
+      --task_name long_term_forecast \
       --is_training 1 \
       --root_path $root_path_name \
       --data_path $data_path_name \
