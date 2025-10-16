@@ -6,8 +6,8 @@ export CUDA_VISIBLE_DEVICES=0
 model_name=WPMixer
 
 # Datasets and prediction lengths
-seq_lens=(36 36 36 36)
-pred_lens=(24 36 48 60)
+seq_lens=(512 512 512 512)
+pred_lens=(96 192 336 720)
 patch_lens=(16 16 16 16)
 d_models=(256 256 256 128)
 

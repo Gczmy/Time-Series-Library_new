@@ -1,3 +1,4 @@
+export CUDA_VISIBLE_DEVICES=0
 model_name=TQNet
 
 root_path_name=./dataset/illness/
