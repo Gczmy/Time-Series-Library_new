@@ -2,6 +2,7 @@ export CUDA_VISIBLE_DEVICES=0
 model_name=SOFTS
 
 python -u run.py \
+  --task_name long_term_forecast \
   --is_training 1 \
   --root_path ./dataset/ETT-small/ \
   --data_path ETTm2.csv \
@@ -26,6 +27,7 @@ python -u run.py \
   --itr 1
 
 python -u run.py \
+  --task_name long_term_forecast \
   --is_training 1 \
   --root_path ./dataset/ETT-small/ \
   --data_path ETTm2.csv \
@@ -50,6 +52,7 @@ python -u run.py \
   --itr 1
 
 python -u run.py \
+  --task_name long_term_forecast \
   --is_training 1 \
   --root_path ./dataset/ETT-small/ \
   --data_path ETTm2.csv \
@@ -74,6 +77,7 @@ python -u run.py \
   --itr 1
 
 python -u run.py \
+  --task_name long_term_forecast \
   --is_training 1 \
   --root_path ./dataset/ETT-small/ \
   --data_path ETTm2.csv \
