@@ -77,9 +77,9 @@ class Model_backbone(nn.Module):
         z = self.backbone(z)  # z: [bs x nvars x pred_patch_num x d_model]
         z = self.proj(z)  # z: [bs x nvars x pred_len]
 
-        # denorm
-        z = z * (std[:, :, 0].unsqueeze(2).repeat(1, 1, self.pred_len))
-        z = z + (mean[:, :, 0].unsqueeze(2).repeat(1, 1, self.pred_len))
+        # denorm fix: self.pred -> z.shape[2]
+        z = z * (std[:, :, 0].unsqueeze(2).repeat(1, 1, z.shape[2]))
+        z = z + (mean[:, :, 0].unsqueeze(2).repeat(1, 1, z.shape[2]))
 
         return z
 
