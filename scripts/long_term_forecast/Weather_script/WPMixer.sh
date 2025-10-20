@@ -45,7 +45,7 @@ for i in "${!pred_lens[@]}"; do
 		--dropout ${dropouts[$i]} \
 		--patience ${patiences[$i]} \
 		--train_epochs ${epochs[$i]} \
-		--wavelets ${wavelets[$i]} \
+		--wavelet ${wavelets[$i]} \
 		--w_level ${levels[$i]} \
 		--tfactor ${tfactors[$i]} \
 		--dfactor ${dfactors[$i]} \
