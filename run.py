@@ -162,7 +162,7 @@ if __name__ == '__main__':
     parser.add_argument('--d_core', type=int, default=512, help='dimension of core')
 
     # WPMixer
-    parser.add_argument('--wavelets', type=str, default='db1')
+    parser.add_argument('--wavelet', type=str, default='db1')
     parser.add_argument('--w_level', type=int, default=1)
     parser.add_argument('--tfactor', type=int, default=5)
     parser.add_argument('--dfactor', type=int, default=5)
