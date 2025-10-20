@@ -29,7 +29,7 @@ strides=(24 24 24 24)
 for i in "${!pred_lens[@]}"; do
 	python -u run.py \
 		--is_training 1 \
-		--root_path ./data/ETT/ \
+		--root_path ./dataset/ETT-small/ \
 		--data_path ETTm2.csv \
 		--model_id wpmixer \
 		--model $model_name \
@@ -46,5 +46,13 @@ for i in "${!pred_lens[@]}"; do
 		--dropout ${dropouts[$i]} \
 		--patience ${patiences[$i]} \
 		--train_epochs ${epochs[$i]} \
+		--wavelets ${wavelets[$i]} \
+		--w_level ${levels[$i]} \
+		--tfactor ${tfactors[$i]} \
+		--dfactor ${dfactors[$i]} \
+		--stride ${strides[$i]} \
+		--enc_in 7 \
+    --dec_in 7 \
+    --c_out 7 \
 		--use_amp
 done

@@ -5,8 +5,8 @@ export CUDA_VISIBLE_DEVICES=0
 model_name=WPMixer
 
 # Datasets and prediction lengths
-dataset=traffic
-seq_lens=(1200 1200 1200 1200)
+dataset=custom
+seq_lens=(512 512 512 512)
 pred_lens=(96 192 336 720)
 learning_rates=(0.0010385 0.000567053 0.001026715 0.001496217)
 batches=(16 16 16 16)
@@ -28,7 +28,7 @@ strides=(8 8 8 8)
 for i in "${!pred_lens[@]}"; do
 	python -u run.py \
 		--is_training 1 \
-		--root_path ./data/traffic/ \
+		--root_path ./dataset/traffic/ \
 		--data_path traffic.csv \
 		--model_id wpmixer \
 		--model $model_name \
@@ -45,5 +45,13 @@ for i in "${!pred_lens[@]}"; do
 		--dropout ${dropouts[$i]} \
 		--patience ${patiences[$i]} \
 		--train_epochs ${epochs[$i]} \
+		--wavelets ${wavelets[$i]} \
+		--w_level ${levels[$i]} \
+		--tfactor ${tfactors[$i]} \
+		--dfactor ${dfactors[$i]} \
+		--stride ${strides[$i]} \
+		--enc_in 862 \
+    --dec_in 862 \
+    --c_out 862 \
 		--use_amp
 done

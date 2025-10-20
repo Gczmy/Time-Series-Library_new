@@ -276,18 +276,18 @@ class Model(nn.Module):
         self.task_name = args.task_name
         self.wpmixerCore = WPMixerCore(input_length=self.args.seq_len,
                                        pred_length=self.args.pred_len,
-                                       wavelet_name=wavelet,
-                                       level=level,
+                                       wavelet_name=self.args.wavelet,
+                                       level=self.args.w_level,
                                        batch_size=self.args.batch_size,
                                        channel=self.args.c_out,
                                        d_model=self.args.d_model,
                                        dropout=self.args.dropout,
                                        embedding_dropout=self.args.dropout,
-                                       tfactor=tfactor,
-                                       dfactor=dfactor,
+                                       tfactor=self.args.tfactor,
+                                       dfactor=self.args.dfactor,
                                        device=self.args.device,
                                        patch_len=self.args.patch_len,
-                                       patch_stride=stride,
+                                       patch_stride=self.args.stride,
                                        no_decomposition=no_decomposition,
                                        use_amp=self.args.use_amp)
 
