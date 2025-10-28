@@ -17,6 +17,7 @@ python -u run.py \
   --dec_in 8 \
   --des 'Exp' \
   --itr 1 \
+  --learning_rate 0.001 \
   --d_model 256 \
   --d_ff 256 \
   --n_heads 16 \
@@ -38,6 +39,7 @@ python -u run.py \
   --dec_in 8 \
   --des 'Exp' \
   --itr 1 \
+  --learning_rate 0.001 \
   --d_model 256 \
   --d_ff 256 \
   --n_heads 16 \
@@ -60,6 +62,7 @@ python -u run.py \
   --dec_in 8 \
   --des 'Exp' \
   --itr 1 \
+  --learning_rate 0.001 \
   --d_model 256 \
   --d_ff 256 \
   --n_heads 16 \
@@ -83,6 +86,7 @@ python -u run.py \
   --dec_in 8 \
   --des 'Exp' \
   --itr 1 \
+  --learning_rate 0.001 \
   --d_model 256 \
   --d_ff 256 \
   --n_heads 16 \
