@@ -23,6 +23,7 @@ python -u run.py \
   --QAM_end 0.2 \
   --lradj TST \
   --pct_start 0.4 \
+  --train_epochs 30 \
   --batch_size 32
 
 python -u run.py \
@@ -47,6 +48,7 @@ python -u run.py \
   --QAM_end 0.3 \
   --lradj TST \
   --pct_start 0.4 \
+  --train_epochs 30 \
   --batch_size 32
 
 python -u run.py \
@@ -71,6 +73,7 @@ python -u run.py \
   --QAM_end 0.5 \
   --lradj TST \
   --pct_start 0.4 \
+  --train_epochs 30 \
   --batch_size 32
 
 python -u run.py \
@@ -95,4 +98,5 @@ python -u run.py \
   --QAM_end 0.7 \
   --lradj TST \
   --pct_start 0.4 \
+  --train_epochs 30 \
   --batch_size 32

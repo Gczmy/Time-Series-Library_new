@@ -22,6 +22,8 @@ python -u run.py \
   --d_ff 256 \
   --n_heads 16 \
   --QAM_end 0.2 \
+  --lradj type4 \
+  --train_epochs 30 \
   --batch_size 128
 
 python -u run.py \
@@ -44,6 +46,8 @@ python -u run.py \
   --d_ff 256 \
   --n_heads 16 \
   --QAM_end 0.3 \
+  --lradj type4 \
+  --train_epochs 30 \
   --batch_size 128
 
 python -u run.py \
@@ -66,6 +70,8 @@ python -u run.py \
   --d_ff 256 \
   --n_heads 16 \
   --QAM_end 0.5 \
+  --lradj type4 \
+  --train_epochs 30 \
   --batch_size 128
 
 python -u run.py \
@@ -88,5 +94,6 @@ python -u run.py \
   --d_ff 256 \
   --n_heads 16 \
   --QAM_end 0.7 \
+  --lradj type4 \
   --train_epochs 10 \
   --batch_size 128

@@ -20,6 +20,10 @@ def adjust_learning_rate(optimizer, scheduler, epoch, args, printout=True):
         }
     elif args.lradj == 'type3':
         lr_adjust = {epoch: args.learning_rate if epoch < 3 else args.learning_rate * (0.9 ** ((epoch - 3) // 1))}
+    elif args.lradj == 'type4':
+        lr_adjust = {2: args.learning_rate * 0.5 ** 1, 4: args.learning_rate * 0.5 ** 2,
+                     6: args.learning_rate * 0.5 ** 3, 8: args.learning_rate * 0.5 ** 4,
+                     10: args.learning_rate * 0.5 ** 5}
     elif args.lradj == "cosine":
         lr_adjust = {epoch: args.learning_rate /2 * (1 + math.cos(epoch / args.train_epochs * math.pi))}
     elif args.lradj == 'TST':
