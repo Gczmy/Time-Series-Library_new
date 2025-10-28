@@ -23,8 +23,7 @@ python -u run.py \
   --QAM_end 0.2 \
   --lradj TST \
   --pct_start 0.4 \
-  --batch_size 32 \
-  --use_multi_gpu
+  --batch_size 32
 
 python -u run.py \
   --task_name long_term_forecast \
@@ -48,8 +47,7 @@ python -u run.py \
   --QAM_end 0.3 \
   --lradj TST \
   --pct_start 0.4 \
-  --batch_size 32 \
-  --use_multi_gpu
+  --batch_size 32
 
 python -u run.py \
   --task_name long_term_forecast \
@@ -73,8 +71,7 @@ python -u run.py \
   --QAM_end 0.5 \
   --lradj TST \
   --pct_start 0.4 \
-  --batch_size 32 \
-  --use_multi_gpu
+  --batch_size 32
 
 python -u run.py \
   --task_name long_term_forecast \
@@ -98,5 +95,4 @@ python -u run.py \
   --QAM_end 0.7 \
   --lradj TST \
   --pct_start 0.4 \
-  --batch_size 32 \
-  --use_multi_gpu
+  --batch_size 32

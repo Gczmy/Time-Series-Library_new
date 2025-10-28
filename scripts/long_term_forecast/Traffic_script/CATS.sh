@@ -25,8 +25,7 @@ python -u run.py \
   --batch_size 32 \
   --train_epochs 100 \
   --patience 20 \
-  --query_independence \
-  --use_multi_gpu
+  --query_independence
 
 python -u run.py \
   --task_name long_term_forecast \
@@ -52,8 +51,7 @@ python -u run.py \
   --batch_size 32 \
   --train_epochs 100 \
   --patience 20 \
-  --query_independence \
-  --use_multi_gpu
+  --query_independence
 
 python -u run.py \
   --task_name long_term_forecast \
@@ -79,8 +77,7 @@ python -u run.py \
   --batch_size 32 \
   --train_epochs 100 \
   --patience 20 \
-  --query_independence \
-  --use_multi_gpu
+  --query_independence
 
 python -u run.py \
   --task_name long_term_forecast \
@@ -106,5 +103,4 @@ python -u run.py \
   --batch_size 32 \
   --train_epochs 100 \
   --patience 20 \
-  --query_independence \
-  --use_multi_gpu
+  --query_independence
