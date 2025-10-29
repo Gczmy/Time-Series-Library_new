@@ -22,6 +22,7 @@ python -u run.py \
   --des 'Exp' \
   --d_ff 512 \
   --batch_size 4 \
+  --learning_rate 0.001 \
   --itr 1
 
 python -u run.py \
@@ -43,6 +44,7 @@ python -u run.py \
   --c_out 321 \
   --des 'Exp' \
   --batch_size 4 \
+  --learning_rate 0.001 \
   --itr 1
 
 python -u run.py \
@@ -64,6 +66,7 @@ python -u run.py \
   --c_out 321 \
   --des 'Exp' \
   --batch_size 4 \
+  --learning_rate 0.001 \
   --itr 1
 
 python -u run.py \
@@ -85,4 +88,5 @@ python -u run.py \
   --c_out 321 \
   --des 'Exp' \
   --batch_size 4 \
+  --learning_rate 0.001 \
   --itr 1

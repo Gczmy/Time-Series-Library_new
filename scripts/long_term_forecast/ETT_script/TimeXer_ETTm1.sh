@@ -21,6 +21,7 @@ python -u run.py \
   --c_out 7 \
   --d_model 256 \
   --batch_size 4 \
+  --learning_rate 0.001 \
   --des 'Exp' \
   --itr 1
 
@@ -44,6 +45,7 @@ python -u run.py \
   --d_model 256 \
   --d_ff 256 \
   --batch_size 4 \
+  --learning_rate 0.001 \
   --des 'Exp' \
   --itr 1
 
@@ -67,6 +69,7 @@ python -u run.py \
   --d_model 256 \
   --d_ff 1024 \
   --batch_size 4 \
+  --learning_rate 0.001 \
   --des 'Exp' \
   --itr 1
 
@@ -90,5 +93,6 @@ python -u run.py \
   --d_model 256 \
   --d_ff 512 \
   --batch_size 4 \
+  --learning_rate 0.001 \
   --des 'Exp' \
   --itr 1
