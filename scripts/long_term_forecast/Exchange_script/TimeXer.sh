@@ -16,9 +16,9 @@ python -u run.py \
   --pred_len 96 \
   --e_layers 1 \
   --factor 3 \
-  --enc_in 7 \
-  --dec_in 7 \
-  --c_out 7 \
+  --enc_in 8 \
+  --dec_in 8 \
+  --c_out 8 \
   --d_model 256 \
   --batch_size 4 \
   --learning_rate 0.001 \
@@ -40,9 +40,9 @@ python -u run.py \
   --pred_len 192 \
   --e_layers 2 \
   --factor 3 \
-  --enc_in 7 \
-  --dec_in 7 \
-  --c_out 7 \
+  --enc_in 8 \
+  --dec_in 8 \
+  --c_out 8 \
   --des 'Exp' \
   --d_model 128 \
   --batch_size 4 \
@@ -63,9 +63,9 @@ python -u run.py \
   --pred_len 336 \
   --e_layers 1 \
   --factor 3 \
-  --enc_in 7 \
-  --dec_in 7 \
-  --c_out 7 \
+  --enc_in 8 \
+  --dec_in 8 \
+  --c_out 8 \
   --des 'Exp' \
   --d_model 512 \
   --d_ff 1024 \
@@ -87,9 +87,9 @@ python -u run.py \
   --pred_len 720 \
   --e_layers 1 \
   --factor 3 \
-  --enc_in 7 \
-  --dec_in 7 \
-  --c_out 7 \
+  --enc_in 8 \
+  --dec_in 8 \
+  --c_out 8 \
   --des 'Exp' \
   --d_model 256 \
   --d_ff 1024 \
